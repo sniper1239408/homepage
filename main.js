@@ -21,6 +21,20 @@ if (event.key === "Enter") {
 function search(){
     const item = document.getElementById("area").value;
     if(item !== ""){
-    window.location = "https://www.google.com/search?q="+item;
+        if(item.startsWith("https://")){
+            window.location = item
+        }
+        else if(item == "b1"){
+        window.location = "https://nahar.managebac.com/student/home"
+    }
+    else if(item == "b2"){
+        window.location = "https://youtube.com" 
+    }
+    else if(item == "b3"){
+        window.location = "https://docs.google.com/spreadsheets/d/1dp7eAtWVz8MNn6spVUoANgqV-s4MVlKiUB83u14v9kA/edit?gid=0#gid=0"
+    }
+    else{
+        window.location = "https://www.google.com/search?q="+encodeURIComponent(item);
+    }
     }
 }

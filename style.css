@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(19, 89, 0);
+    font-family: 'Courier New', Courier, monospace;
+}
+.center{
+    text-align: center;
+}
+.blacktext {
+    color: white;
+}
+#area {
+    padding: 5px;
+    border-radius: 12px;
+    width: 50%;
+    height: 20px;
+    font-size: 20px;
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+#buton {
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 12px;
+    background-color: aqua;
+}
+#list{
+    font-size: 18px;
+    display: inline-block;
+    text-align: left;
+}

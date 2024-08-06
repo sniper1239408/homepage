@@ -3,43 +3,29 @@
     <head>
         <title>New Tab</title>
         <link rel="icon" href="logo.png">
-        <style>
-            body{
-                background-color: rgb(19, 89, 0);
-                font-family: 'Courier New', Courier, monospace;
-            }
-            .blacktext {
-                color: white;
-            }
-            #area {
-                padding: 5px;
-                border-radius: 12px;
-                width: 50%;
-                height: 20px;
-                font-size: 20px;
-                background-color: rgb(29, 29, 29);
-                color: white;
-            }
-            #buton {
-                padding: 5px;
-                font-size: 18px;
-                border-radius: 12px;
-                background-color: aqua;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-            <center>
+            <div class="center">
                 <div class="blacktext">
-                <h1>Welcome to Firefox!</h1>
+                <h1><u>Welcome to Firefox!</u></h1>
                 <h2 id="time">Unknown time! Make sure JS is enabled!</h2>
-                <textarea id="area"></textarea>
+                <textarea id="area" autofocus placeholder="Type here to search"></textarea>
             </div>
                 <br><br>
-                <button id="buton" onclick="search()">Search using Google</button>
-            </center>  
-   
-        
+                <button id="buton" onclick="search()" >Search using Google</button>
+                <br><br>
+                <hr>
+                <h1 class="blacktext"><u>Bookmarks</u></h1>
+                <p class="blacktext">Tip: Type "b" and then the number of the item in the text box to directly go to that item! For example, type "b2" for YouTube!</p>
+                    <ol class="blacktext" id="list">
+                        <b>
+                        <li><h2><a href="https://nahar.managebac.com/student/home">ManageBack</a></h2></li>
+                        <li><h2><a href="https://youtube.com">YouTube</a></h2></li>
+                        <li><h2><a href="https://docs.google.com/spreadsheets/d/1dp7eAtWVz8MNn6spVUoANgqV-s4MVlKiUB83u14v9kA/edit?gid=0#gid=0">HW Sheet</a></h2></li>
+                    </b>
+                    </ol>
+                </div>
     </body>
     <script src="main.js"></script>
 </html>
